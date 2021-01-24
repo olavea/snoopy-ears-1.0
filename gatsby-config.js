@@ -1,3 +1,9 @@
+require("dotenv").config({
+  path: `.env.dev`,
+})
+
+
+
 module.exports = {
   siteMetadata: {
     title: "Snoopy Ears 1.0",
@@ -6,8 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "fBGXaGo6reTNJ_bXkGvlcVyejWMkbAsX-kIt2vsbGw8",
-        spaceId: "4zhx15eo3eqn",
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
       },
     },
     "gatsby-plugin-sharp",
