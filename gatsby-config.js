@@ -7,7 +7,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Snoopy Ears 1.0",
-    siteUrl: `https://snoopyears.gtsb.io/`,
+    siteUrl: `https://snoopyears10master.gtsb.io/`,
   },
   plugins: [
     {
