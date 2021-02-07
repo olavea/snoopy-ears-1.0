@@ -24,11 +24,11 @@ async function turnCitiesIntoPages({ graphql, actions, reporter }) {
   // 3. Loop over each city and create a page for that city
   data.allContentfulCity.nodes.forEach((city) =>{
       actions.createPage({
-        path: `city/${city.name}`,
+        path: `location/${city.slug}`,
 
         component: pizzaTemplate,
         context: {
-            ola: 'is cool',
+            ola: 'is practicing playfuller 🔨😺⛵',
             slug: city.slug,
         }
       })
