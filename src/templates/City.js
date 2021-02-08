@@ -1,9 +1,16 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-
-export default function SingleCityPage() {
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+//{data.contentfulCity.name}<
+//<p>{data.contentfulCity.description}</p>
+export default function SingleCityPage(data) {
+    const image = getImage(data.imageSharp)
     return (
-        <p>Single City</p>
+      <section>
+        <h2>Yo</h2>
+        <GatsbyImage image={image} alt="Yo" />
+        console.log({data.contentfulCity.image})
+      </section>
     )
 }
 // This needs to be dynamic
@@ -16,13 +23,15 @@ export const query = graphql`
 
     contentfulCity(slug: {eq: $slug}) {
       name
+      image {
+        fluid {
+          src
+        }
+      }
     }
-
-
+    imageSharp {
+      gatsbyImageData(width: 333, placeholder: DOMINANT_COLOR)
+    }
   }
-
-
-
-
 `;
 
