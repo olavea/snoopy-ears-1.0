@@ -30,5 +30,28 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Snoopy-Ears`,
+        short_name: `Snoopy-Ears`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+
+        icon: `src/images/icon.png`,
+        cache_busting_mode: 'none'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+          workboxConfig: {
+            globPatterns: ['**/icon-path*']
+          }
+      }
+    },
+
   ],
 };
