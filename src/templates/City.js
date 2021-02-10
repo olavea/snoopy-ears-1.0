@@ -22,7 +22,7 @@ console.log(data.data.contentfulCity.image.fluid)
   return (
       <div>
         <h1>Hello gatsby-image</h1>
-        <Img fluid={mockData.data.contentfulCity.image.fluid} />
+        <Img fluid={data.data.contentfulCity.image.fluid} />
       </div>
     )
 }
