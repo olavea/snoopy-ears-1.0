@@ -4,9 +4,9 @@ import * as React from "react"
 // styles
 
 import theme from '../gatsby-plugin-theme-ui'
-console.log(theme)
+console.log(theme.colors.text)
 export const MrPragma = () => {
-  return <div>MrPragma</div>
+  return <div style={{ color: theme.colors.text}}>MrPragma</div>
 }
 // markup
 const IndexPage = () => {
