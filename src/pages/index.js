@@ -1,13 +1,8 @@
 import * as React from "react"
-// import MrPragma from "../../components/MrPragma"
+import MrPragma from "../components/MrPragma"
 
 // styles
 
-import theme from '../gatsby-plugin-theme-ui'
-console.log(theme.colors.text)
-export const MrPragma = () => {
-  return <div sx={{ color: "text"}}>MrPragma</div>
-}
 // markup
 const IndexPage = () => {
   return (
