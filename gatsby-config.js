@@ -42,7 +42,7 @@ module.exports = {
         theme_color: `ff1616`,
         display: `standalone`,
         icon: `src/images/icon.png`,
-        cache_busting_mode: 'none'
+        cache_busting_mode: 'none',
       },
     },
    {
