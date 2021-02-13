@@ -32,5 +32,26 @@ module.exports = {
     },
     `gatsby-plugin-preact`,
     "gatsby-plugin-theme-ui",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#fffaf0`,
+        theme_color: `ff1616`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        cache_busting_mode: 'none'
+      },
+    },
+   {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: ['**/icon-path*']
+         }
+      }
+   }
   ],
 };
