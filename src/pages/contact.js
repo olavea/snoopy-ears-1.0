@@ -19,7 +19,7 @@ export default function FeedbackForm({ data }) {
   );
 }
 export const query = graphql`
-  {
+  query MyQuery {
     formiumForm(slug: { eq: "contact-us" }) {
       id
       createAt
