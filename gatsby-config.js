@@ -7,7 +7,12 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Snoopy Ears 1.0",
-    siteUrl: `https://snoopyears.gtsb.io/`,
+    titleTemplate: "%s · The Real Hero",
+    description: "Prototype",
+    siteUrl: `https://snoopy-ears.netlify.app`,
+    url: `https://snoopy-ears.netlify.app`,
+    image: "/images/icon.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@olaholstvea",
   },
   plugins: [
     {
