@@ -7,8 +7,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Snoopy Ears 1.0",
+    titleTemplate: "%s · The Real Hero",
     description: "Prototype",
-    siteUrl: `https://snoopyears.gtsb.io/`,
+    url: `https://snoopyears.gtsb.io`,
+    image: "/images/icon.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@olaholstvea",
   },
   plugins: [
     {
