@@ -44,4 +44,54 @@ exports.createPages = async (params) => {
     console.log('BUIIILDNG BEEEETTER CITIIIIES!');
     console.log('BUIIILDNG BEEEETTER CITIIIIES!');
     console.log('BUIIILDNG BEEEETTER CITIIIIES!');
-  }
+}
+
+// Over is Wes Bos style Code
+const chunk = require(`lodash/chunk`)
+
+// OlaVeaQuestion: Did I install this lodash/chunk?
+// OlaVeaAnswer: No
+
+// This is a simple debugging tool
+// dd() will prettily dump to the terminal and kill the process
+// const { dd } = require(`dumper.js`)
+
+/**
+ * exports.createPages is a built-in Gatsby Node API.
+ * It's purpose is to allow you to create pages for your site! 💡
+ *
+ * See https://www.gatsbyjs.com/docs/node-apis/#createPages for more info.
+ */
+const { slash } = require(`gatsby-core-utils`)
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  // query content for WordPress posts
+  const {
+    data: {
+      allWpPost: { nodes: allPosts },
+    },
+  } = await graphql(`
+    query {
+      allWpPost {
+        nodes {
+          id
+          uri
+        }
+      }
+    }
+  `)
+  const postTemplate = path.resolve(`./src/templates/blog-post.js`)
+  allPosts.forEach(post => {
+    createPage({
+      // will be the url for the page
+      path: `blog${post.uri}`,
+      // specify the component template of your choice
+      component: slash(postTemplate),
+      // In the ^template's GraphQL query, 'id' will be available
+      // as a GraphQL variable to query for this post's data.
+      context: {
+        id: post.id,
+      },
+    })
+  })
+}
