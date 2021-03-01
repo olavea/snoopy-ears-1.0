@@ -1,5 +1,6 @@
 import * as React from "react"
 import MrPragma from "../components/MrPragma"
+import Nav from '../components/Nav'
 
 // styles
 
@@ -8,6 +9,7 @@ const IndexPage = () => {
   return (
     <main>
       <title>Home Page</title>
+      <Nav />
       <h1>
         Congratulations
         <br />
