@@ -5,10 +5,10 @@ import Footer from './Footer'
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <>
             <Nav />
             <p>{children}</p>
             <Footer />
-        </div>
+        </>
     );
 }
