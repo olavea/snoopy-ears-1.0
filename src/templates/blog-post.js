@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
       <SEO title="In The Morning" />
         <div>
           <h1>{post.title}</h1>
-          <Img fluid={post.featuredImage.node.localFile.childImageSharp.fluid} />
+          <Img alt={post.featuredImage.node.altText} fluid={post.featuredImage.node.localFile.childImageSharp.fluid} />
         </div>
     </>
   )
@@ -38,6 +38,11 @@ export const pageQuery = graphql`
   ) {
     # selecting the current post by id
     post: wpPost(id: { eq: $id }) {
+      tags {
+        nodes {
+            name
+        }
+      }
       id
       excerpt
       content
