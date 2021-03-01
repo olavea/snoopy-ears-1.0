@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'gatsby';
 
 export default function Nav() {
     return (
         <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/Play-fu/">Play-fu </a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Play-fu/">Play-fu </Link></li>
           </ul>
         </nav>
     )
