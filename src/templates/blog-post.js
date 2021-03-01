@@ -21,7 +21,8 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
       <SEO title="In The Morning" />
         <div>
           <h1>{post.title}</h1>
-          <Img alt={post.featuredImage.node.altText} fluid={post.featuredImage.node.localFile.childImageSharp.fluid} />
+          <Img  fluid={post.featuredImage.node.localFile.childImageSharp.fluid} />
+          <p dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
     </>
   )
