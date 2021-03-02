@@ -1,9 +1,4 @@
-
-
-
 const path = require('path')
-
-
 
 async function turnCitiesIntoPages({ graphql, actions, reporter }) {
   // 1. Get a template for this page
@@ -97,4 +92,34 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+async function turnWordPressPostsIntoGatsbyJS({ graphql, actions, reporter }) {
+  // 1. Get a template for this post
+  const pizzaTemplate =path.resolve('./src/templates/City.js');
+  // 2. query all posts
+  const { data } = await graphql(`
+    query {
+        allContentfulCity {
+                  nodes {
+                    name
+                    slug
+
+                  }
+                }
+              }
+  `);
+  console.log(data);
+  // 3. Loop over each WordPressPost and create a GatsbyJSPost for that WordPressPosts
+  data.allContentfulCity.nodes.forEach((city) =>{
+      actions.createPage({
+        path: `location/${city.slug}`,
+
+        component: pizzaTemplate,
+        context: {
+            ola: 'is practicing playfuller 🔨😺⛵',
+            slug: city.slug,
+        }
+      })
+  });
 }
