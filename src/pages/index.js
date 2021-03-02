@@ -18,7 +18,7 @@ const IndexPage = () => {
         <span role="img" aria-label="Party face emojis">
         🥳🥳🥳
         </span>
-        <span > With WordPress and </span>
+        <span > With WordPress and Contentful and </span>
         <MrPragma />
       </h1>
       <img
