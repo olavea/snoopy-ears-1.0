@@ -95,9 +95,9 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 
 async function turnWordPressPostsIntoGatsbyJS({ graphql, actions, reporter }) {
-  // 1. Get a template for this post
+  // 1. Get a template for this GatsbyJSpost
   const pizzaTemplate =path.resolve('./src/templates/City.js');
-  // 2. query all posts
+  // 2. query all WordPressPosts
   const { data } = await graphql(`
     query {
         allContentfulCity {
