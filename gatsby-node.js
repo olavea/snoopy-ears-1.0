@@ -36,6 +36,9 @@ async function turnCitiesIntoPages({ graphql, actions, reporter }) {
 }
 
 exports.createPages = async (params) => {
+
+    // Add allContentfulCity inside exports.createPages #4
+    await
     // Create pages dynamically
     // cities
     await turnCitiesIntoPages(params);
