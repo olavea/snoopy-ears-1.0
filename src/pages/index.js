@@ -1,25 +1,24 @@
 import * as React from "react"
-
 import MrPragma from "../components/MrPragma"
 
-
-// styles
-
-// markup
 const IndexPage = () => {
   return (
     <>
-      <title>Home Page</title>
+      <title>ITM! 😺👍</title>
 
       <h1>
-        Congratulations Self!
+        In The Morning Self!
         <br />
-        <span >— You've just made a Gatsby site! </span>
+        <span >— Let's build a DIY TimeShip Prototype!</span>
+        <span role="img" aria-label="Party face emojis">
+        ⛵😺👍
+        </span>
+        <span > With WordPress and Gatsby and Contentful and Sanity and </span>
+        <MrPragma />
         <span role="img" aria-label="Party face emojis">
         🥳🥳🥳
         </span>
-        <span > With WordPress and Contentful and </span>
-        <MrPragma />
+
       </h1>
       <img
         alt="Gatsby G Logo"
