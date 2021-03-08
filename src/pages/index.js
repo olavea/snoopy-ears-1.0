@@ -9,11 +9,14 @@ const IndexPage = () => {
       <h1>
         In The Morning Self!
         <br />
-        <span >— Let's build a DIY TimeShip Prototype!</span>
+        <span >— Let's Test a TimeShip Prototype!</span>
+        <br></br>
         <span role="img" aria-label="Party face emojis">
         ⛵😺👍
         </span>
-        <span > With WordPress and Gatsby and Contentful and Sanity and </span>
+        <br></br>
+        <span > With WordPress and
+        <br></br>Gatsby and <br></br>Contentful and <br></br>Sanity and </span>
         <MrPragma />
         <span role="img" aria-label="Party face emojis">
         🥳🥳🥳

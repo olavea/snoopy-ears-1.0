@@ -13,7 +13,7 @@ const NotFoundPage = () => {
      <li>Did you die still holding your pasSword in your hand?</li>
      <li></li>
      </ol>
-     <link to="/">No? Go home to Slash 🎩</link>
+     <Link to="/">No? Go home to Slash 🎩</Link>
     </div>
 
     </>
