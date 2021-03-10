@@ -10,12 +10,13 @@ export const pageQuery = graphql`
   ) {
     # selecting the current post by id
     post: wpPost(id: { eq: $id }) {
+      date(formatString: "MMMM DD, YYYY")
       slug
       id
       excerpt
       content
       title
-      date(formatString: "MMMM DD, YYYY")
+
       featuredImage {
         node {
           altText
