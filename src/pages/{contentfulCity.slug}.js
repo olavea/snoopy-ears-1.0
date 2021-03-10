@@ -6,6 +6,7 @@ const BlogPostPage = ({ data }) => <h1>Good Morning! {data.contentfulCity.name}<
 export const query = graphql`
   query($id: String!) {
     contentfulCity(id: {eq: $id}) {
+      slug
       name
       image {
         fluid {
