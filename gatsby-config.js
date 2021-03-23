@@ -31,8 +31,9 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/posts`,
-        name: "images",
-        path: "./src/images/",
+        name: `posts`,
+        // name: "images",
+        // path: "./src/images/",
       },
       __key: "images",
     },
@@ -51,6 +52,7 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
+    `gatsby-plugin-mdx`,
     {
       resolve: 'gatsby-plugin-offline',
       options: {
