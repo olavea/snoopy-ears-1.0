@@ -1,11 +1,37 @@
 import * as React from "react"
 import MrPragma from "../components/MrPragma"
 import Layout from "../components/Layout"
+import {graphql, Link} from "gatsby"
 
-const IndexPage = () => {
+export const query = graphql`
+  query askWerlinToMakeAListOfTales
+
+  {
+    allMdx(sort: {fields: [frontmatter___title], order: ASC}){
+      nodes {
+        slug
+        frontmatter {
+          title
+        }
+      }
+    }
+  }
+`;
+const IndexPage = ({data}) => {
+  const treasure = data.allMdx.nodes
   return (
     <>
     <Layout>
+
+      {treasure.map((tale) => {
+        return (
+          <Link to={treasure.slug} key={treasure.slug}>
+            <h2>{treasure.frontmatter.title}</h2>
+
+          </Link>
+        )
+      })}
+
       <title>ITM! <span role="img" aria-label="Cat face emojis">😺👍</span></title>
 
       <h1>
