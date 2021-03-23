@@ -6,14 +6,14 @@ const IndexPage = () => {
   return (
     <>
     <Layout>
-      <title>ITM! 😺👍</title>
+      <title>ITM! <span role="img" aria-label="Cat face emojis">😺👍</span></title>
 
       <h1>
         In The Morning Self!
         <br />
         <span >— Let's Test This TimeShip Prototype!</span>
         <br></br>
-        <span role="img" aria-label="Party face emojis">
+        <span role="img" aria-label="Cat face emojis">
         ⛵😺👍
         </span>
         <br></br>
