@@ -13,4 +13,4 @@ export const pageQuery = graphql`
     }
 `;
 
-export default ShowDate
+export default ShowDate;
