@@ -24,10 +24,10 @@ const IndexPage = ({data}) => {
     <Layout>
 
 
-      {treasure.map((tale) => {
+      {treasure.map((post) => {
         return (
-          <Link to={tale.slug} key={tale.slug}>
-            <h2>{tale.frontmatter.title}</h2>
+          <Link to={post.slug} key={post.slug}>
+            <h2>{post.frontmatter.title}</h2>
 
           </Link>
         )
