@@ -3,8 +3,8 @@ import MrPragma from "../components/MrPragma"
 import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
 
-export const query = graphql`
-  query askWerlinToMakeAListOfTales
+export const pageQuery = graphql`
+
 
   {
     allMdx(sort: {fields: [frontmatter___title], order: ASC}){
@@ -23,17 +23,20 @@ const IndexPage = ({data}) => {
     <>
     <Layout>
 
+
       {treasure.map((tale) => {
         return (
-          <Link to={treasure.slug} key={treasure.slug}>
-            <h2>{treasure.frontmatter.title}</h2>
+          <Link to={tale.slug} key={tale.slug}>
+            <h2>{tale.frontmatter.title}</h2>
 
           </Link>
         )
       })}
 
-      <title>ITM! <span role="img" aria-label="Cat face emojis">😺👍</span></title>
 
+      <title>ITM<span role="img" aria-label="TimeShip emoji">
+      ⛵
+      </span></title>
       <h1>
         In The Morning Self!
         <br />
