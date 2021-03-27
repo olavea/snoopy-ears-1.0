@@ -7,8 +7,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Snoopy Ears 1.0",
-    titleTemplate: "%s · The Practicing Dev",
-    description: "Prototype of Personal Dev Blog for Ola Vea",
+    titleTemplate: "%s · The The Play-Fu Practicing Dev",
+    description: "Prototype of a Personal Dev Blog for Ola Vea",
     siteUrl: `https://snoopy-ears.netlify.app`,
     url: `https://snoopy-ears.netlify.app`,
     image: "/images/icon.png", // Get my OlaVea iconPath to your image you placed in the 'static' folder
@@ -30,8 +30,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/posts`,
+        name: `posts`,
+        // name: "images",
+        // path: "./src/images/",
       },
       __key: "images",
     },
@@ -50,6 +52,7 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
+    `gatsby-plugin-mdx`,
     {
       resolve: 'gatsby-plugin-offline',
       options: {
