@@ -5,15 +5,15 @@ import {MDXRenderer} from "gatsby-plugin-mdx"
 
 
 const showTale = ({data}) => {
-  const post = data.mdx
+  const treasure = data.mdx
   return (
     <>
       <Layout>
         <article>
 
-      <h1>{post.frontmatter.title}</h1>
+      <h1>{treasure.frontmatter.title}</h1>
       <MDXRenderer>
-       {post.body}
+       {treasure.body}
       </MDXRenderer>
         </article>
       </Layout>

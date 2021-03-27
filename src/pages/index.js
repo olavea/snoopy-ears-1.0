@@ -4,34 +4,38 @@ import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
 
 export const pageQuery = graphql`
-
-
-  {
-    allMdx(sort: {fields: [frontmatter___title], order: ASC}){
-      nodes {
-        slug
-        frontmatter {
-          title
-        }
+{
+  allMdx(sort: {
+    fields: [frontmatter___title],
+    order: ASC
+  }){
+    nodes {
+      slug
+      frontmatter {
+        title
       }
     }
   }
+}
 `;
+
+
 const IndexPage = ({data}) => {
-  const treasure = data.allMdx.nodes
+  const treasures = data.allMdx.nodes
   return (
     <>
     <Layout>
+    {
+      treasures.map((treasure) => {
 
-
-      {treasure.map((post) => {
         return (
-          <Link to={post.slug} key={post.slug}>
-            <h2>{post.frontmatter.title}</h2>
-
+          <Link to={treasure.slug} key={treasure.slug}>
+            <h2>{treasure.frontmatter.title}</h2>
           </Link>
         )
-      })}
+      })
+    }
+
 
 
       <title>ITM<span role="img" aria-label="TimeShip emoji">
