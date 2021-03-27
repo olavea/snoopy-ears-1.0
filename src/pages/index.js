@@ -2,6 +2,7 @@ import * as React from "react"
 import MrPragma from "../components/MrPragma"
 import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
+import {StaticImage} from "gatsby-plugin-image"
 
 export const pageQuery = graphql`
 {
@@ -25,6 +26,12 @@ const IndexPage = ({data}) => {
   return (
     <>
     <Layout>
+      <StaticImage
+        src="https://pbs.twimg.com/media/EjO5-6dX0AAmE9r?format=jpg&name=small"
+        alt="the cover page of the children's book I am co-writing with my daughter Lillian (6 🦄) Ruby’s TimeShip"
+        layout="fullWidth"
+        //aspectRatio={21 / 9}
+      />
     {
       treasures.map((treasure) => {
 
