@@ -9,7 +9,7 @@ import laugh1 from "../../assets/podcasts/3-show-your-code-episode-3_recording-1
 //Users/olavea/Desktop/Develop/100days/snoopy-ears-1.0/snoopy-ears-1.0/src/assets/podcasts/3-show-your-code-episode-3_recording-1_2021-03-31-Podcast-ready-olavea.mp3
 //snoopy-ears-1.0/src/assets/podcasts/3-show-your-code-episode-3_recording-1_2021-03-31-Podcast-ready-olavea.mp3
 
-export default function Home() {
+export default function Four() {
     const [play, {stop}] = useSound(laugh1);
     return (
         <>
@@ -30,7 +30,7 @@ export default function Home() {
             sx={{ height: "80vh", width: "clamp(30px, 30vw, 600px)" }}
           >
             <h1>Show Your Code </h1>
-            <h2>Episode 3 </h2>
+            <h2>Episode 4 </h2>
             <h2>Tom Erik Støwer and</h2>
             <h2>Ola Vea</h2>
 
