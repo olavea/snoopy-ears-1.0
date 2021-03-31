@@ -1,5 +1,5 @@
 import React from 'react'
-import theme from 'gatsby-plugin-theme-ui'
+import theme from '../gatsby-plugin-theme-ui'
 
 console.log(theme.colors.text)
 
