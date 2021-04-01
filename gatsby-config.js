@@ -55,11 +55,11 @@ module.exports = {
     `gatsby-plugin-mdx`,
     {
       resolve: 'gatsby-plugin-offline',
-      options: {
-        workboxConfig: {
-            globPatterns: ['**/icon-path*']
-        }
-      }
+      // options: {
+      //   workboxConfig: {
+      //       globPatterns: ['**/icon-path*']
+      //   }
+      // }
     },
     {
       resolve: `gatsby-source-wordpress`,
