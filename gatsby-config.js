@@ -6,13 +6,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Snoopy Ears 1.0",
-    titleTemplate: "%s · The The Play-Fu Practicing Dev",
-    description: "Prototype of a Personal Dev Blog for Ola Vea",
-    siteUrl: `https://snoopy-ears.netlify.app`,
+    title: "TimeShip",
+    titleTemplate: "%s ·For The UnderWater Dev Practicing  Play-Foo",
+    description: "Prototype of a Personal Dev Blog for Ola Vea (43 🦇😺) and Lillian (6 🦄)",
+    siteUrl: `https://olavea.gtsb.io/`,
     url: `https://snoopy-ears.netlify.app`,
     image: "/images/icon.png", // Get my OlaVea iconPath to your image you placed in the 'static' folder
-    twitterUsername: "@olaholstvea",
+    twitter: "@olaholstvea",
   },
   plugins: [
     {
@@ -26,6 +26,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     {
