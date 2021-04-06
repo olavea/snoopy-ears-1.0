@@ -2,6 +2,7 @@ import * as React from "react"
 import MrPragma from "../components/MrPragma"
 import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
+import {StaticImage} from "gatsby-plugin-image"
 
 export const pageQuery = graphql`
 {
@@ -25,19 +26,24 @@ const IndexPage = ({data}) => {
   return (
     <>
     <Layout>
-    <Link to="/shop/playfuller"><h2>Not Sure How Your Coding Practice Can Get Better?</h2></Link>
-    <Link to="/showyourcodepodcast/04/"><h2>Show Your Code Podcast</h2></Link>
-    {
-      treasures.map((treasure) => {
+      <Link to="/shop/playfuller"><h2>Not Sure How Your Coding Practice Can Get Better?</h2></Link>
+      <Link to="/showyourcodepodcast/04/"><h2>Show Your Code Podcast</h2></Link>
+      {
+        treasures.map((treasure) => {
 
-        return (
-          <Link to={treasure.slug} key={treasure.slug}>
-            <h2>{treasure.frontmatter.title}</h2>
-          </Link>
-        )
-      })
-    }
-
+          return (
+            <Link to={treasure.slug} key={treasure.slug}>
+              <h2>{treasure.frontmatter.title}</h2>
+            </Link>
+          )
+        })
+      }
+      <StaticImage
+        src="https://pbs.twimg.com/media/EjO5-6dX0AAmE9r?format=jpg&name=small"
+        alt="Ruby's TimeShip Goes Deeper"
+        layout="fullWidth"
+        aspectRatio={21 / 9}
+      />
 
 
       <title>ITM<span role="img" aria-label="TimeShip emoji">
