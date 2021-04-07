@@ -10,7 +10,7 @@ const SEO = ({ title, description, image, imageAlt, meta = [] }) => {
           siteMetadata {
             title
             description
-
+            twitter
             siteUrl
           }
         }
@@ -42,7 +42,7 @@ const SEO = ({ title, description, image, imageAlt, meta = [] }) => {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `TimeShip`,
         },
         {
           name: `twitter:title`,
