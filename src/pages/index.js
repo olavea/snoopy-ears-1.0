@@ -5,7 +5,6 @@ import {graphql, Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import SEO from "../components/seo"
 
-
 export const pageQuery = graphql`
 {
   allMdx(sort: {
