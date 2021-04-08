@@ -40,7 +40,13 @@ module.exports = {
       __key: "images",
     },
     `gatsby-plugin-preact`,
-    "gatsby-plugin-theme-ui",
+    {
+      resolve: `gatsby-plugin-theme-ui`,
+      options: {
+        preset: `@theme-ui/preset-funk`,
+        prismPreset: `prism-okaidia`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

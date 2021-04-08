@@ -1,12 +1,19 @@
-import React from 'react'
+
+/** @jsx jsx */
+import {jsx} from "theme-ui"
 // import Nav from '../components/Nav'
 import {Link} from "gatsby"
-
 import Footer from './Footer'
+
+
+const bodyStyles = {
+  mx: `2rem`,
+  padding: `1rem`
+}
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <div sx={bodyStyles}>
 
           <header>
             <nav>

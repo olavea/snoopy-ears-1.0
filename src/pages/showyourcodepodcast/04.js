@@ -17,8 +17,8 @@ export default function Four() {
       <Flex
         bg=""
         sx={{
-          height: "100vh",
-          width: "100vw",
+          height: "70vh",
+          width: "70vw",
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -28,10 +28,11 @@ export default function Four() {
             onClick={play}
             // What should the user do to stop laughter?
             // Frown? Say "STOP laughing!"
-            sx={{ height: "80vh", width: "clamp(30px, 30vw, 600px)" }}
+            sx={{ height: "50vh", width: "clamp(30px, 30vw, 600px)" }}
           >
+            <h2>Click here to play the</h2>
             <h1>Show Your Code </h1>
-            <h2>Episode 4 </h2>
+            <h2>podcast episode 4 </h2>
             <h2>Tom Erik Støwer and</h2>
             <h2>Ola Vea</h2>
 
