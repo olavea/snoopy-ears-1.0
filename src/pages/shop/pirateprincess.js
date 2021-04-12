@@ -5,7 +5,7 @@ import { Link} from "gatsby"
 
 
 
-const PlayfullerPage = ({data}) => {
+const PiratePrincessPage = ({data}) => {
 
   return (
     <>
@@ -14,11 +14,11 @@ const PlayfullerPage = ({data}) => {
 
 
 
-      <title>Playfuller<span role="img" aria-label="TimeShip emoji">
-      ⛵
+      <title>Pirate Princess<span role="img" aria-label="TimeShip emoji">
+      🏴‍☠️ 👑
       </span></title>
 
-      <h2>Not Sure How Your Coding Practice Can Get Better?</h2>
+      <h2>Not Sure How You Can Practice Better With Your Daughter?</h2>
       <p>You are improving your coding skills, but maybe you suspect you could be practicing better? What does «better» practice even look like for YOU? Maybe you ARE practicing «better» sometimes without even knowing it?
 
       This can be frustrating. Maybe IS frustrating? And adding to your other work life frustrations?
@@ -31,7 +31,7 @@ const PlayfullerPage = ({data}) => {
       <p>Imagine this – Imagine climbing that wall-of-better-practicing-coding and loving it. Imagine practicing playfuller, not more. Imagine automating on tiiiny task inside your brain. Imagine automating another tiiiny task inside your brain after the first. Imagine yourself climbing up-up-up that wall-of-better-practicing-coding. Pushing your skills exactly hard enough  and feeling playfull about it.
       </p>
 
-      <h2>Get a Personalized Practice Plan From a Playfuller Coding Coach</h2>
+      <h2>Start on a Practice Plan Personalized For a Your Daughter</h2>
       <p>Get started practicing programming playfuller – Often all it takes to get started in a playful direction is to talk to the right person at the right time. Put the frustrating practice behind you. Learn exactly what to do next to practice coding playfuller and better. Book a live 1-on-1 practice planning session with me now. Why?
       </p>
       <ul>
@@ -94,4 +94,4 @@ const PlayfullerPage = ({data}) => {
   )
 }
 
-export default PlayfullerPage
+export default PiratePrincessPage
