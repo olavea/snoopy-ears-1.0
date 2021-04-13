@@ -25,10 +25,11 @@ module.exports = {
     "gatsby-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
+    "gatsby-plugin-preact",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -39,7 +40,7 @@ module.exports = {
       },
       __key: "images",
     },
-    `gatsby-plugin-preact`,
+
     {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
@@ -50,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `olavea`,
+        short_name: `olavea`,
         start_url: `/`,
         background_color: `#fffaf0`,
         theme_color: `ff1616`,
