@@ -44,7 +44,7 @@ const IndexPage = ({data}) => {
         src="https://pbs.twimg.com/media/EjO5-6dX0AAmE9r?format=jpg&name=small"
         alt="Ruby's TimeShip Goes Deeper"
         layout="fullWidth"
-        aspectRatio={21 / 9}
+
       />
 
 
