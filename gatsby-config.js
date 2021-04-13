@@ -26,7 +26,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-
+    "gatsby-plugin-mdx",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     {
@@ -60,7 +60,7 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
-    `gatsby-plugin-mdx`,
+
     {
       resolve: 'gatsby-plugin-offline',
       // options: {
