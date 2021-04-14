@@ -18,9 +18,10 @@ const showTale = ({data}) => {
         description={treasure.frontmatter.description}
         image={underWaterImage}
         imageAlt={treasure.frontmatter.imageAlt} />
-          <GatsbyImage image={image} alt={treasure.frontmatter.imageAlt} />
+
 
       <h1>{treasure.frontmatter.title}</h1>
+      <GatsbyImage image={image} alt={treasure.frontmatter.imageAlt} />
       <MDXRenderer>
        {treasure.body}
       </MDXRenderer>
