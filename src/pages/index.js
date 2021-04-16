@@ -29,7 +29,7 @@ const IndexPage = ({data}) => {
     <Layout>
       <SEO title={`🎩 Slash is Home`} />
       <Link to="/shop/playfuller"><h2>Not Sure How Your Coding Practice Can Get Better?</h2></Link>
-      <Link to="/showyourcodepodcast/04/"><h2>Show Your Code Podcast</h2></Link>
+      <Link to="/showyourcodepodcast/05-episode-tom-erik/"><h2>Show Your Code Podcast</h2></Link>
       {
         treasures.map((treasure) => {
 
