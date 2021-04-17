@@ -33,6 +33,7 @@
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-source-wordpress": "^4.0.1",
     "gatsby-transformer-sharp": "^3.2.0",
+    "googleapis": "^71.0.0",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.12",
     "react": "^16.13.1",
