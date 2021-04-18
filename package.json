@@ -17,6 +17,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@theme-ui/prism": "0.4.0-alpha.3",
+    "convertkit-react": "^1.5.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.11.0",
