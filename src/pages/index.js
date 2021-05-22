@@ -1,29 +1,45 @@
 import * as React from "react"
 import MrPragma from "../components/MrPragma"
 import Layout from "../components/Layout"
-import {graphql, Link} from "gatsby"
+import { useStaticQuery, graphql, Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import SEO from "../components/seo"
 
-export const pageQuery = graphql`
-{
-  allMdx(sort: {
-    fields: [frontmatter___title],
-    order: ASC
-  }){
-    nodes {
-      slug
-      frontmatter {
-        title
-      }
-    }
-  }
-}
-`;
+// export const pageQuery = graphql`
+// {
+//   allMdx(sort: {
+//     fields: [frontmatter___title],
+//     order: ASC
+//   }){
+//     nodes {
+//       slug
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// }
+// `;
 
 
 const IndexPage = ({data}) => {
-  const treasures = data.allMdx.nodes
+  const treasures = useStaticQuery(graphql`
+    query {
+      allMdx(sort: {
+        fields: [frontmatter___title],
+        order: ASC
+      }){
+        nodes {
+          slug
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  `);
+  //const treasure = videos.allYouTube.nodes
+  const treasure = treasures.allMdx.nodes
   return (
     <>
     <Layout>
@@ -31,7 +47,7 @@ const IndexPage = ({data}) => {
       <Link to="/shop/playfuller"><h2>Not Sure How Your Coding Practice Can Get Better?</h2></Link>
       <Link to="/showyourcodepodcast/05-episode-tom-erik/"><h2>Show Your Code Podcast</h2></Link>
       {
-        treasures.map((treasure) => {
+        treasure.map((treasure) => {
 
           return (
             <Link to={treasure.slug} key={treasure.slug}>
