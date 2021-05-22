@@ -13,7 +13,7 @@ const NotFoundPage = () => {
       <StaticImage src="../images/Joker_pink_1.jpg" alt="LEGO Joker BANG!" />
 
 
-      <p>Jump in my old school batmobile and I'll give you a ride to my beauuuuutiful mansion for some good old fashioned fun.</p>
+      <p>Jump in my old school batmobile and I'll give you a ride to my beauuuuutiful mansion for some good old fashioned fun. Or....</p>
       <Link to="/">Or go Home to Slash <span role="img" alt="tophat emoji">🎩</span></Link>
       <div></div>
 
