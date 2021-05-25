@@ -23,9 +23,19 @@ module.exports = {
       },
     },
     "gatsby-image",
-    "gatsby-plugin-sharp",
+
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 100,
+          formats: ["auto", "webp", "avif"],
+          placeholder: "blurred",
+        },
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sitemap",
