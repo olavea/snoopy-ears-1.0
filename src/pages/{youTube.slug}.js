@@ -1,6 +1,6 @@
 import React from "react";
 import {graphql, Link} from "gatsby";
-import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import { GatsbyImage, getImage} from "gatsby-plugin-image";
 
 import Seo from "../components/Seo";
 
