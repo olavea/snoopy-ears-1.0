@@ -1,6 +1,11 @@
 import {graphql} from "gatsby"
+import React from "react"
 
-
+export default function DateOfArrival() {
+    return (
+        <p>Let's go to data.wpPost.date</p>
+    )
+}
 
 export const query = graphql`
     query WerlinDollarid(
@@ -17,6 +22,9 @@ export const query = graphql`
         }
     }
 `
+
+
+
 
 // export const pageQuery = graphql`
 //     query askWerlinDollaridToGrabDate(
