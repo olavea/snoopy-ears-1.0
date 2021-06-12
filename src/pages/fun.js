@@ -9,15 +9,15 @@ export default function FunPage() {
   return (
     <>
       <Layout>
-        <h2>COMING SOON: GATSBYJS FUNCTIONS FREE OF DISTRACTIONS</h2>
+        <h2>COMING SOON => GATSBYJS FUNCTIONS + YOU = TRUE ❤</h2>
         <br/>
-        <h1>NOT SURE WHEN YOU'LL FIND THE HEADSPACE TO PRACTICE GATSBYJS FUNCTIONS?</h1>
+        <h1>DO YOU REGRET NOT HAVING TRIED GATSBY FUNCTIONS YET?</h1>
         <p>Distractions suck. 😅 Distractions suck your time. Distractions suck your energy. And last but not least distractions suck at your focus and makes your practice less mindfull. And you probably have noticed that automating a new micro skill in your brain demands mindfull practice. Distractions are the enemies of new skills like Gatsby functions.</p>
         <br/>
-        <h2>IMAGINE PLAYING AROUND WITH GATSBY FUNCTIONS PIRATICALLY FREE OF DISTRACTIONS</h2>
+        <h2>IMAGINE JUST YOURSELF AND GATSBY FUNCTIONS NO DISTRACTIONS</h2>
         <p>Imagine this – You're at your favourite place, with your favourite refreshment, but WITHOUT distractions. You know piratically playing around with Gatsby functions, but no digital noise can even come near you. Only a dream surely, or IS it....?</p>
         <br/>
-        <h2>PRINT OUT A WORKBOOK OF GATSBY FUNCTIONS TASKS TESTED ON A SEASONED CREW OF GATSBY–PIRATES</h2>
+        <h2>90 MINUTES MINUS COMPUTER + WORKBOOK = GATSBY FUNCTIONS FOCUSED YOU</h2>
         <p> – Get un-DISTRACTED for 90 minutes – Sometimes what it takes to get un-distracted is to lock your distracTOR compuTOR up, under deck. In chains. Gagged and at gun point. Imprisoned along with your phone and any other distracTOR device in your life. Settle down and immerse yourself in the tiny tasks of your printed out workbook of Gatsby functions.</p>
         <h2>DO YOU WANT TO FOLLOW LILLIAN'S (6 🦄🏴‍☠️) & OLA'S (43 😺🏴‍☠️) PROGRESS BUILDING THE WORKBOOK?</h2>
         <h2>SIGN UP FOR EMAIL UPDATES NOW!</h2>
