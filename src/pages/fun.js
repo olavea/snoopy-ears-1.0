@@ -11,16 +11,16 @@ export default function FunPage() {
       <Layout>
         <h2>COMING SOON => GATSBYJS FUNCTIONS + YOU = TRUE ❤</h2>
         <br/>
-        <h1>DO YOU REGRET NOT HAVING TRIED GATSBY FUNCTIONS YET?</h1>
-        <p>Distractions suck. 😅 Distractions suck your time. Distractions suck your energy. And last but not least distractions suck at your focus and makes your practice less mindfull. And you probably have noticed that automating a new micro skill in your brain demands mindfull practice. Distractions are the enemies of new skills like Gatsby functions.</p>
+        <h1>NOT SURE HOW TO DIVE DEEPER INTO SERVERLESS GATSBY FUNCTIONS?</h1>
+        <p>Maybe you have tried AWS 😅 .</p>
         <br/>
-        <h2>IMAGINE JUST YOURSELF AND GATSBY FUNCTIONS NO DISTRACTIONS</h2>
-        <p>Imagine this – You're at your favourite place, with your favourite refreshment, but WITHOUT distractions. You know piratically playing around with Gatsby functions, but no digital noise can even come near you. Only a dream surely, or IS it....?</p>
+        <h2>IMAGINE KNOWING EXACTLY HOW TO BUILD A SERVERLESS GATSBY FUNCTION TIMESHIP</h2>
+        <p>Imagine this – ... Only a dream surely, or IS it....?</p>
         <br/>
-        <h2>90 MINUTES MINUS COMPUTER + WORKBOOK = GATSBY FUNCTIONS FOCUSED YOU</h2>
+        <h2>OUR FREE SERVERLESS GATSBY FUNCTION WEBINAR WILL MAKE YOU PRACTICE PIRATICALLY PLAYFULLER</h2>
         <p> – Get un-DISTRACTED for 90 minutes – Sometimes what it takes to get un-distracted is to lock your distracTOR compuTOR up, under deck. In chains. Gagged and at gun point. Imprisoned along with your phone and any other distracTOR device in your life. Settle down and immerse yourself in the tiny tasks of your printed out workbook of Gatsby functions.</p>
-        <h2>DO YOU WANT TO FOLLOW LILLIAN'S (6 🦄🏴‍☠️) & OLA'S (43 😺🏴‍☠️) PROGRESS BUILDING THE WORKBOOK?</h2>
-        <h2>SIGN UP FOR EMAIL UPDATES NOW!</h2>
+        <h2>DO YOU WANT TO FOLLOW LILLIAN'S (6 🏴‍☠️👸) & OLA'S (43 😺🏴‍☠️) PROGRESS BUILDING THE WORKBOOK?</h2>
+        <h2>SIGN UP FOR EMAIL UPDATES NOW AND GET THE LINK TO THE WEBINAR!</h2>
 
         <ConvertKitForm formId={GATSBY_CONVERTKIT_FORM_ID} />
         <p>The heros from our picture book will also be in this Gatsby functions workbook 😺.</p>
