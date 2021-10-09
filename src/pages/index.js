@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import {graphql, Link} from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import SEO from "../components/seo"
+import Nav from "../components/Nav";
 
 export const pageQuery = graphql`
 {
@@ -28,6 +29,7 @@ const IndexPage = ({data}) => {
     <>
     <Layout>
       <SEO title={`🎩 Slash is Home`} />
+      <Nav />
       <Link to="/shop/playfuller"><h2>Not Sure How Your Coding Practice Can Get Better?</h2></Link>
       <Link to="/showyourcodepodcast/05-episode-tom-erik/"><h2>Show Your Code Podcast</h2></Link>
       {

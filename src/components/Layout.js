@@ -1,29 +1,20 @@
+import React from "react";
+import Nav from '../components/Nav'
 
-/** @jsx jsx */
-import {jsx} from "theme-ui"
-// import Nav from '../components/Nav'
+
+
 import {Link} from "gatsby"
 import Footer from './Footer'
+//<Link to="/">Go home to Slash 🎩 </Link>
+// <p>Ruby-Ruby-Ruby-Ruuuuuby! Oooh Oooh Oooh Oooh Oooooh</p>
 
-
-const bodyStyles = {
-  mx: `2rem`,
-  padding: `1rem`
-}
 
 export default function Layout({ children }) {
     return (
-        <div sx={bodyStyles}>
-
-          <header>
-            <nav>
-              <Link to="/">Go home to Slash 🎩 </Link>
-            </nav>
-          </header>
-
-
-          <main>{children}</main>
-          <Footer />
+        <div >
+            <Nav />
+            {children}
+            <Footer />
         </div>
     );
 }
