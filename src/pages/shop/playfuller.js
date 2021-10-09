@@ -69,7 +69,7 @@ const PlayfullerPage = ({data}) => {
 
 
 
-      <StaticImage src="src/images/Joker_pink_1.jpg" alt="pink joker" />
+
 
 
       <p>Built playfully with GatsbyJS </p>
