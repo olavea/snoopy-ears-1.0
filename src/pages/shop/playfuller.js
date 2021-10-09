@@ -2,7 +2,7 @@ import * as React from "react"
 // import MrPragma from "../../components/MrPragma"
 import Layout from "../../components/Layout"
 import { Link} from "gatsby"
-
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const PlayfullerPage = ({data}) => {
@@ -69,7 +69,7 @@ const PlayfullerPage = ({data}) => {
 
 
 
-
+      <StaticImage src="src/images/Joker_pink_1.jpg" alt="pink joker" />
 
 
       <p>Built playfully with GatsbyJS </p>

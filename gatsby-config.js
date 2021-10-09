@@ -16,6 +16,16 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: 'fr5nacyp',
+        dataset: 'production',
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
+
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
