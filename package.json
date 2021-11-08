@@ -1,0 +1,24 @@
+{
+  "name": "@queen-raae/bootcamp-first-function",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A Gatsby Mini Bootcamp from Queen Raae",
+  "author": "@raae",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@raae/gatsby-plugin-new-css": "0.0.1",
+    "gatsby": "4.0.2",
+    "gatsby-plugin-gatsby-cloud": "4.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}
