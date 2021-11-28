@@ -17,7 +17,7 @@ export default function SinglePizzaPage({data}) {
           src= {data.file.publicURL}
           alt= 'shark'
         />
-        <p> 🦈: {data.file.name}</p>
+        <p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
         <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= 'shark' />
       </div>
     )
