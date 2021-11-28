@@ -15,10 +15,10 @@ export default function SinglePizzaPage({data}) {
 
         <img
           src= {data.file.publicURL}
-          alt= 'shark'
+          alt= {data.file.name}
         />
         <p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
-        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= 'shark' />
+        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
       </div>
     )
 };
