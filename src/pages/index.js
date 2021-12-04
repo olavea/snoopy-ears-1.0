@@ -30,6 +30,18 @@ const IndexPage = () => {
 
   return (
     <main>
+      <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
+        <fieldset>
+          <p>
+            <label htmlFor="amount">Amount: </label>
+            <br />
+            <input type="number" id="amount" name="amount" defaultValue="10" />
+          </p>
+          <p>
+            <button>Donate</button>
+          </p>
+        </fieldset>
+      </form>
       <header>
         <h1>Ruby's TimeShip</h1>
         <p>
