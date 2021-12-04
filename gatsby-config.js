@@ -23,6 +23,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
-    `@raae/gatsby-plugin-donations`
+    `@raae/gatsby-plugin-donations`,
+    {
+      resolve: "@raae/gatsby-plugin-let-it-snow",
+      options: {
+        duration: 10,
+        // intensity: "blizzard",
+        colors: ["#fff000"],
+      },
+    },
   ],
 };
