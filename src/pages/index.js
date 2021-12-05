@@ -30,6 +30,14 @@ const IndexPage = () => {
 
   return (
     <main>
+      <section>
+        <a href="https://queen.outseta.com/auth?widgetMode=login#o-anonymous">
+        ⚓ Log in ⚓
+        </a>
+        <a href="https://queen.outseta.com/auth?widgetMode=register#o-anonymous">
+          🃏 Sign up 🃏
+        </a>
+      </section>
       <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
         <fieldset>
           <p>
@@ -42,18 +50,15 @@ const IndexPage = () => {
           </p>
         </fieldset>
       </form>
-      <header>
-        <h1>Ruby's TimeShip</h1>
-        <p>
-          Your mission: Locate The Pirate Princess Lillian at the age of 11, so
-          you can bring her back to 1554 and save Ruby's sister, Princess
-          Lizabeth from prison.
-        </p>
-      </header>
 
       <form onSubmit={handleSubmit}>
         <fieldset disabled={isDisabled}>
-          <p>
+
+        <p>
+          <button>Take a TimeShip trip</button>
+        </p>
+
+        <p>
             <label htmlFor="year">Year: </label>
             <br />
             <input required type="number" id="year" name="year" />
@@ -65,9 +70,6 @@ const IndexPage = () => {
             <input required type="text" id="city" name="city" />
           </p>
 
-          <p>
-            <button>Let's Travel</button>
-          </p>
         </fieldset>
 
         <p>
@@ -81,6 +83,15 @@ const IndexPage = () => {
           {message && <span>{message}</span>}
         </p>
       </form>
+      <header>
+        <h1>Ruby's TimeShip</h1>
+        <p>
+          Your mission: Locate The Pirate Princess Lillian at the age of 11, so
+          you can bring her back to 1554 and save Ruby's sister, Princess
+          Lizabeth from prison.
+        </p>
+      </header>
+
     </main>
   );
 };
