@@ -1,10 +1,10 @@
 import { graphql } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 export default function SinglePizzaPage({data}) {
-  console.log(data)
+//  console.log(data)
 //  console.log(data)
     return (
       <div>
