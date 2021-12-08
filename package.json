@@ -18,14 +18,18 @@
     "@raae/gatsby-plugin-donations": "^1.0.0-next.1",
     "@raae/gatsby-plugin-let-it-snow": "^0.5.0",
     "@raae/gatsby-plugin-new-css": "0.0.1",
+    "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "4.0.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
     "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-plugin-styled-components": "^5.3.0",
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-transformer-sharp": "^4.2.0",
+    "normalize.css": "^8.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
   }
 }
