@@ -1,28 +1,33 @@
 import { graphql } from "gatsby";
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image"
-// import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
+import styled from "styled-components";
+
+//<p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
+//          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+
+const PizzaGrid = styled.div`
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+`;
 
 export default function SinglePizzaPage({data}) {
-//  console.log(data)
-//  console.log(data)
-    return (
+  return (
+    <PizzaGrid>
+      <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
       <div>
-        <div
-          className="blog-post-content"
-
-        />
-
-        <img
-          src= {data.file.publicURL}
-          alt= {data.file.name}
-        />
-        <p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
-        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
+      <h2 className="mark">🦈: {data.file.name}</h2>
+      <img
+        src= {data.file.publicURL}
+        alt= {data.file.name}
+      />
       </div>
-    )
+    </PizzaGrid>
+  )
 };
-//          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+
 export const query = graphql`
 query MyQuery($id: String!) {
   file(id: {eq: $id}) {

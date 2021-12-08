@@ -2,8 +2,9 @@
 import { graphql } from "gatsby";
 import React from "react";
 import PizzaList from "../components/PizzaList";
+
 export default function PizzasPage({data}) {
-    // console.log(data.pizzas)
+  console.log(data.pizzas)
   const pizzaTreasure = data.pizzas.nodes;
   return (
     <>
@@ -11,6 +12,7 @@ export default function PizzasPage({data}) {
     </>
   );
 }
+
 export const query = graphql`
   query PizzaQuery {
     pizzas:   allFile(sort: {fields: name, order: ASC}) {

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://demo.raae.codes",
-    title: "@raae demo starter",
+    siteUrl: "https://timeship1.gatsbyjs.io/",
+    title: `TimeShip1`,
+    description: "Lillian and Friends Building Stuff",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -30,6 +31,12 @@ module.exports = {
         duration: 10,
         // intensity: "blizzard",
         colors: ["#fff000"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
   ],
