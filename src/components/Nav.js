@@ -54,7 +54,7 @@ export default function Nav() {
     <NavStyles>
       <ul>
         <li>
-          <Link to="/">🎩 Home</Link>
+          <Link to="/">🎩 Home Sweet Home</Link>
         </li>
         <li>
           <Link to="/pizzas/">🖼️ Images </Link>
